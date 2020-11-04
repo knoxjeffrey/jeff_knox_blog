@@ -1,0 +1,131 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
+  <!-- Use the title from a page's frontmatter if it has one -->
+  <title><%= current_page.data.title || "Jeff Knox Blog" %></title>
+  <%= stylesheet_link_tag "site" %>
+  <style>
+    :root {
+      --global-font-size: 15px;
+      --global-line-height: 1.4em;
+      --global-space: 10px;
+      --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
+      --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
+      --background-color: #222225;
+      --page-width: 60em;
+      --font-color: #e8e9ed;
+      --invert-font-color: #222225;
+      --secondary-color: #a3abba;
+      --tertiary-color: #a3abba;
+      --primary-color: #62c4ff;
+      --error-color: #ff3c74;
+      --progress-bar-background: #3f3f44;
+      --progress-bar-fill: #62c4ff;
+      --code-bg-color: #3f3f44;
+      --input-style: solid;
+      --display-h1-decoration: none;
+    }
+    .components-grid {
+      display: grid;
+      grid-column-gap: 1.4em;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-rows: auto;
+      display: grid;
+      grid-gap: 1em;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(calc(var(--page-width) / 12), 1fr)
+      );
+    }
+    @media only screen and (min-width: 70em) {
+      .components-grid {
+        grid-template-columns: 3fr 9fr;
+      }
+    }
+  </style>
+
+  <link
+    rel="apple-touch-icon"
+    sizes="57x57"
+    href="/favicon/apple-icon-57x57.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="60x60"
+    href="/favicon/apple-icon-60x60.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="72x72"
+    href="/favicon/apple-icon-72x72.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="76x76"
+    href="/favicon/apple-icon-76x76.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="114x114"
+    href="/favicon/apple-icon-114x114.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="120x120"
+    href="/favicon/apple-icon-120x120.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="144x144"
+    href="/favicon/apple-icon-144x144.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="152x152"
+    href="/favicon/apple-icon-152x152.png"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/favicon/apple-icon-180x180.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="192x192"
+    href="/favicon/android-icon-192x192.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="96x96"
+    href="/favicon/favicon-96x96.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/favicon/favicon-16x16.png"
+  />
+
+  <%= javascript_include_tag "site", async: true %>
+</head>

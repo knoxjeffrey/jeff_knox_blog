@@ -1,0 +1,42 @@
+engines:
+  bundler-audit:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - ruby
+        - javascript
+  eslint:
+    enabled: true
+    channel: "eslint-4"
+    checks:
+      import/no-unresolved:
+        enabled: false
+      import/extensions:
+        enabled: false
+      prefer-object-spread/prefer-object-spread:
+        enabled: false
+    exclude_patterns:
+      - "assets/javascripts/inline/third-party/polyfills.js"
+  stylelint:
+    enabled: true
+  fixme:
+    enabled: true
+  rubocop:
+    enabled: true
+    channel: rubocop-0-92
+    config:
+      file: .rubocop.yml
+  reek:
+    enabled: true
+  flog:
+    enabled: true
+  markdownlint:
+    enabled: true
+exclude_paths:
+  - .github/
+  - .git
+  - .gitignore
+  - .rubocop.yml
+  - .ruby-version
