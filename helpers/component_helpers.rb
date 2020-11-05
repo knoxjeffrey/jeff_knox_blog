@@ -8,7 +8,11 @@ module ComponentHelpers
           .call(cell_method) { capture(&block) if block_given? }
   end
 
-  def button(**args)
+  def component_alert(**args)
+    component :alert, :alert, args
+  end
+
+  def component_button(**args)
     component :button, :button, args
   end
 end

@@ -1,0 +1,23 @@
+<html lang="en-GB">
+  <%= partial "partials/head" %>
+  <body class="terminal">
+    <div class="container">
+      <%= component :navigation, :main_navigation, link: "/styleguide", title: "Styleguide" do 
+        [
+          component(:navigation, :navigation_list_item, link: "#", text: "Link 1"),
+          component(:navigation, :navigation_list_item, link: "#", text: "Link 2"),
+          component(:navigation, :navigation_list_item, link: "#", text: "Link 3")
+        ].join("")
+      end %>
+    </div>
+    <div class="container">
+      <hr />
+      <div class="components components-grid">
+        <%= partial "partials/styleguide/aside" %>
+        <main>
+          <%= yield %>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
