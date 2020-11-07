@@ -2,11 +2,15 @@
 
 # FormHelpers
 module FormHelpers
-  def form_label_tag(...)
-    FormTagHelper.form_label_tag(...)
+  def fth_form_tag(...)
+    FormTagHelper.form_tag(...)
   end
 
-  def form_text_field_tag(...)
-    FormTagHelper.form_text_field_tag(...)
+  def fth_label_tag(...)
+    FormTagHelper.label_tag(...)
+  end
+
+  def fth_text_field_tag(...)
+    FormTagHelper.text_field_tag(...)
   end
 end
