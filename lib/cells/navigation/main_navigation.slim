@@ -1,0 +1,8 @@
+body
+  .terminal-nav
+    header.terminal-logo
+      .logo.terminal-prompt
+        a.no-style href="#{options[:link]}" = options[:title]
+    nav.terminal-menu
+      ul typeof="BreadcrumbList" vocab="https://schema.org/" 
+        = yield

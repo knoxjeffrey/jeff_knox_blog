@@ -2,10 +2,11 @@ source 'https://rubygems.org'
 
 gem 'actionview'
 gem 'cells'
-gem 'cells-erb'
+gem 'cells-slim'
 gem 'middleman', '~> 4.3.11'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem 'require_all'
+gem 'slim'
 gem 'tzinfo-data', platforms: %i[mswin mingw jruby x64_mingw]
 gem 'use'
 gem 'wdm', '~> 0.1', platforms: %i[mswin mingw x64_mingw]

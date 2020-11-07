@@ -15,4 +15,10 @@ module ComponentHelpers
   def component_button(**args)
     component :button, :button, args
   end
+
+  def testing(arg, &block)
+    # content = capture(&block)
+    # concat content
+    capture(&block)
+  end
 end

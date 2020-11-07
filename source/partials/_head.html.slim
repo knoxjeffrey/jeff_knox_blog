@@ -1,0 +1,71 @@
+head
+  meta charset="utf-8" /
+  meta content="ie=edge" http-equiv="x-ua-compatible" /
+  meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" /
+  meta content="ie=edge" http-equiv="X-UA-Compatible" /
+  meta content="#ffffff" name="msapplication-TileColor" /
+  meta content="/favicon/ms-icon-144x144.png" name="msapplication-TileImage" /
+  /! Use the title from a page's frontmatter if it has one
+  title= current_page.data.title || "Jeff Knox Blog"
+  = stylesheet_link_tag "site"
+  css:
+    :root {
+      --global-font-size: 15px;
+      --global-line-height: 1.4em;
+      --global-space: 10px;
+      --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
+      --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+        serif;
+      --background-color: #222225;
+      --page-width: 60em;
+      --font-color: #e8e9ed;
+      --invert-font-color: #222225;
+      --secondary-color: #a3abba;
+      --tertiary-color: #a3abba;
+      --primary-color: #62c4ff;
+      --error-color: #ff3c74;
+      --progress-bar-background: #3f3f44;
+      --progress-bar-fill: #62c4ff;
+      --code-bg-color: #3f3f44;
+      --input-style: solid;
+      --display-h1-decoration: none;
+    }
+    .components-grid {
+      display: grid;
+      grid-column-gap: 1.4em;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-rows: auto;
+      display: grid;
+      grid-gap: 1em;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(calc(var(--page-width) / 12), 1fr)
+      );
+    }
+    @media only screen and (min-width: 70em) {
+      .components-grid {
+        grid-template-columns: 3fr 9fr;
+      }
+    }
+  link href="/favicon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" /
+  link href="/favicon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60" /
+  link href="/favicon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" /
+  link href="/favicon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" /
+  link href="/favicon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" /
+  link href="/favicon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" /
+  link href="/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" /
+  link href="/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" /
+  link href="/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" /
+  link href="/favicon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png" /
+  link href="/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /
+  link href="/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" /
+  link href="/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /
+  = javascript_include_tag "site", async: true

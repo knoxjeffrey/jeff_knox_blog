@@ -1,0 +1,7 @@
+section
+    header
+      h2#Alerts Alerts
+    .flex-column
+      = component_alert text: "Default message", type: :default, html: { class: "margin-bottom--s" }
+      = component_alert text: "Primary message", type: :primary, html: { class: "margin-bottom--s" }
+      = component_alert text: "Error message", type: :error, html: { class: "margin-bottom--s" }

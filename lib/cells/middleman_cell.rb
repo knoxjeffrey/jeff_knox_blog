@@ -6,7 +6,8 @@ require 'action_view'
 # Hook into Middleman helpers here https://github.com/middleman/middleman/blob/61915cdaab387cfedd92bf25f35e2eb69ecd8f87/middleman-core/lib/middleman-core/core_extensions/default_helpers.rb
 # Inspiration from here https://github.com/bhollis/middleman/blob/7be0590acf3662127ee020e96ffcefa15185339e/middleman-core/lib/middleman-core/renderers/redcarpet.rb
 class MiddlemanCell < Cell::ViewModel
-  include ::Cell::Erb
+  include ::Cell::Slim
+  include ActionView::Helpers::FormTagHelper
   include ActionView::Helpers::TagHelper
 
   attr_accessor :output_buffer
@@ -19,5 +20,9 @@ class MiddlemanCell < Cell::ViewModel
 
   def image_tag(path, params = {})
     model.image_tag(path, params)
+  end
+
+  def protect_against_forgery?
+    false
   end
 end

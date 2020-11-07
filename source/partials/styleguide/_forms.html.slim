@@ -1,0 +1,8 @@
+section
+    header
+      h2#Forms Forms
+    = form_tag "#" do
+      = component :form, :fieldset, legend: "Form legend" do
+        = component :form, :formgroup do
+          = form_label_tag "email", "Email input:"
+          = form_text_field_tag "email", nil, type: "email", required: true, minlength: "5", placeholder: "test"

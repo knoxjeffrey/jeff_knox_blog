@@ -1,3 +1,5 @@
+require 'slim'
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -45,7 +47,9 @@ page '/*.txt', layout: false
 #   activate :minify_javascript
 # end
 
-Dir['lib/cells/**/**.rb'].each(&method(:load))
+set :markdown_engine, 'slim'
+
+Dir['lib/**/**.rb'].each(&method(:load))
 files.watch :source,
   path: File.join(root, 'source', 'cells'),
   destination_dir: 'source'

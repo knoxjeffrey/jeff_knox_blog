@@ -25,9 +25,9 @@ GEM
       declarative-option (< 0.2.0)
       tilt (>= 1.4, < 3)
       uber (< 0.2.0)
-    cells-erb (0.1.0)
-      cells (~> 4.0)
-      erbse (>= 0.1.1)
+    cells-slim (0.1.1)
+      cells (>= 4.0.1, < 6.0.0)
+      slim (>= 3.0)
     coderay (1.1.3)
     coffee-script (2.4.1)
       coffee-script-source
@@ -40,8 +40,6 @@ GEM
       declarative-option (< 0.2.0)
     declarative-option (0.1.0)
     dotenv (2.7.6)
-    erbse (0.1.4)
-      temple
     erubi (1.9.0)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -153,6 +151,9 @@ GEM
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
+    slim (4.1.0)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 2.0.6, < 2.1)
     structured_warnings (0.3.0)
     temple (0.8.2)
     thor (1.0.1)
@@ -173,7 +174,7 @@ PLATFORMS
 DEPENDENCIES
   actionview
   cells
-  cells-erb
+  cells-slim
   middleman (~> 4.3.11)
   middleman-autoprefixer (~> 2.7)
   pry-byebug
@@ -181,6 +182,7 @@ DEPENDENCIES
   rubocop (~> 0.92.0)
   rubocop-performance
   rubocop-rspec
+  slim
   tzinfo-data
   use
   wdm (~> 0.1)
