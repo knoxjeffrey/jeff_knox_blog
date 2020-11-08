@@ -9,7 +9,9 @@ class FormCell < MiddlemanCell
   end
 
   def formgroup(&block)
-    render(&block)
+    content_tag(:div, class: 'form-group') do
+      block.call.html_safe
+    end
   end
 
   def label(&block)

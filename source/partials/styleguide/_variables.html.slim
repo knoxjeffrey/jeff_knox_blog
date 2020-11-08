@@ -1,0 +1,57 @@
+section
+  header
+    h2#DocVariables Variables
+  p Customizing the style of Terminal CSS with CSS Variables is easy.
+  dl.custom-dl
+    css:
+      .custom-dl dt {
+        | font-weight: 600;
+      | }
+      .custom-dl dd.italic{
+        | font-style: italic;
+      | }
+    dt --global-font-size
+    dd The Base font size
+    dt --global-line-height
+    dd The base line height. Modify this to achieve the best readability.
+    dt --font-stack
+    dd The fonts for the website.
+    dd
+      | Use
+      code @font-face
+      | or any other font provider to include your custom fonts.
+    dt --mono-font-stack
+    dd
+      | Same as above but for
+      = succeed "." do
+        code code
+    dt --background-color
+    dd The page background color
+    dt --font-color
+    dd The base font color for text, headlines, blockquotes, lists, etc.
+    dt --invert-font-color
+    dd Sometimes text appears on a colored background. Adjust this color to improve readability.
+    dt --primary-color
+    dd The primary color is used for links and buttons.
+    dt --secondary-color
+    dd The secondary color is more subtle then the primary color. It's used for code highlighting and image captions.
+    dt --error-color
+    dd Used for error alerts and form validation.
+    dt --progress-bar-background
+    dd The background color of progress bars.
+    dt --progress-bar-fill
+    dd The fill color, indicating the progress in progress bars.
+    dt --code-bg-color
+    dd
+      | The background color of
+      code &lt;code&gt;
+      | elements.
+    dt --input-style
+    dd The style of input element borders. Possible values are:
+    dd.italic none, solid, dotted, dashed, double, groove, ridge, inset, outset, hidden, inherit, initial, unset
+    dt --display-h1-decoration
+    dd
+      | Show a double dash below
+      code h1
+      | elements. Possible values are:
+    dd.italic block, none

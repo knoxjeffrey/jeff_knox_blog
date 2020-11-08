@@ -1,0 +1,12 @@
+section
+  header
+    h2#NavigationList Navigation Lists
+  = component :navigation, :navigation_list do
+    = component :navigation, :navigation_list_item, link: "#", text: "Dashboard"
+    = component :navigation, :navigation_list_item, link: "#", text: "Members", active: true
+    = component :navigation, :navigation_list_item, link: "#", text: "Settings"
+    = component :navigation, :navigation_list_item, link: "#", text: "Profile"
+    ul
+      = component :navigation, :navigation_list_item, link: "#", text: "Account"
+      = component :navigation, :navigation_list_item, link: "#", text: "Billing"
+      = component :navigation, :navigation_list_item, link: "#", text: "Logout"

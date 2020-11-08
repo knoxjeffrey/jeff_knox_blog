@@ -12,6 +12,14 @@ class NavigationCell < MiddlemanCell
     render(&block)
   end
 
+  def navigation_list(&block)
+    content_tag(:nav) do
+      content_tag(:ul) do
+        block.call.html_safe
+      end
+    end
+  end
+
   def navigation_list_item
     active = options[:active] ? ' active' : '' 
     content_tag(:li) do

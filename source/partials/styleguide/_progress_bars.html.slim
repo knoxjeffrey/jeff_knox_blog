@@ -1,0 +1,10 @@
+section
+  header
+    h2#Progress Progress Bar
+    p With only an arrow
+    = component :progress, :progress_arrow, filled: 40
+    p With a percentage showing above the arrow
+    = component :progress, :progress_percent, filled: 30, text: "Loading 30%"
+    p Without arrow
+    = component :progress, :progress_no_arrow, filled: 60
+

@@ -1,6 +1,6 @@
 doctype html
 html lang="en-GB" 
-  body
+  body.terminal
     = partial "partials/head"
     .container
       = component :navigation, :main_navigation, link: "/styleguide", title: "Styleguide" do
@@ -13,3 +13,11 @@ html lang="en-GB"
         = partial "partials/styleguide/aside"
         main
           = yield
+
+    script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js" 
+    javascript:
+      document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll("pre code").forEach(block => {
+          window.hljs.highlightBlock(block);
+        });
+      });

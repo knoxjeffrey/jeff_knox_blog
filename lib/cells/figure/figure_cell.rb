@@ -5,6 +5,7 @@ require 'lib/cells/middleman_cell'
 # FigureCell class
 class FigureCell < MiddlemanCell
   include ::Cell::Slim
+  
   def figure
     render
   end

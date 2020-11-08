@@ -4,6 +4,7 @@
 module FormTagHelper
   extend self
   include ActionView::Helpers::FormTagHelper
+  include ActionView::Helpers::FormOptionsHelper
 
   attr_accessor :output_buffer
 

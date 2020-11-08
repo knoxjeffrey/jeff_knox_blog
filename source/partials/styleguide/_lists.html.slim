@@ -1,0 +1,55 @@
+section
+  header
+    h2#Lists Lists
+  ul
+    li This is a list item
+    li So is this - there could be more
+    li
+      | Make sure to style list items to:
+      ul
+        li Not forgetting child list items
+        li Not forgetting child list items
+        li Not forgetting child list items
+        li Not forgetting child list items
+    li A couple more
+    li Top-level list items
+  p
+    | Don't forget
+    = succeed ":" do
+      strong Ordered lists
+  ol
+    li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    li
+      | Aliquam tincidunt mauris eu risus
+      ol
+        li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        li Aliquam tincidunt mauris eu risus.
+    li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    li Aliquam tincidunt mauris eu risus.
+  p
+    strong> Description lists
+    | are also included.
+  dl
+    dt Description list title 01
+    dd Description list description 01
+    dt Description list title 02
+    dd Description list description 02
+    dd Description list description 03
+  p
+    | A
+    = succeed "," do
+      strong  Table of content
+  p
+    | Unlike regular lists, the TOC component
+    em  only supports a single depth level.
+  ol.terminal-toc
+    li
+      a href="#"  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    li
+      a href="#"  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    li
+      a href="#"  Aliquam tincidunt mauris eu risus.
+    li
+      a href="#"  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    li
+      a href="#"  Aliquam tincidunt mauris eu risus.
