@@ -4,15 +4,14 @@ html lang="en-GB"
     = partial "partials/head"
     .container
       = component :navigation, :main_navigation, link: "/styleguide", title: "Styleguide" do
-        = component :navigation, :navigation_list_item, link: "#", text: "Link 1"
-        = component :navigation, :navigation_list_item, link: "#", text: "Link 2"
-        = component :navigation, :navigation_list_item, link: "#", text: "Link 3"
+        = component :navigation, :navigation_list_item, link: url_for("/"), text: "Home"
     .container
       hr/
       .components.components-grid
         = partial "partials/styleguide/aside"
         main
           = yield
+      = partial "partials/footer"
 
     script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js" 
     javascript:

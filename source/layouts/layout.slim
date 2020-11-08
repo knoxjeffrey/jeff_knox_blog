@@ -3,7 +3,16 @@ html lang="en-GB"
   body
     = partial "partials/head"
     .container
-      = component :navigation, :main_navigation, link: "/styleguide", title: "Styleguide" do
+      = component :navigation, :main_navigation, link: "/", title: "Jeff Knox Blog" do
         = component :navigation, :navigation_list_item, link: "#", text: "Link 1"
     .container
       = yield
+      = partial "partials/footer"
+
+    script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js" 
+    javascript:
+      document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll("pre code").forEach(block => {
+          window.hljs.highlightBlock(block);
+        });
+      });
