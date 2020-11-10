@@ -1,10 +1,10 @@
 doctype html
 html lang="en-GB" 
-  body
+  body.terminal
     = partial "partials/head"
     .container
       = component :navigation, :main_navigation, link: "/", title: "Jeff Knox Blog" do
-        = component :navigation, :navigation_list_item, link: "#", text: "Link 1"
+        = component :navigation, :navigation_list_item, link: "/cv", text: "CV", active: current_page.data.path == current_page.url 
     .container
       = yield
       = partial "partials/footer"

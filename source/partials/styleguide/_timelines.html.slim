@@ -2,7 +2,10 @@ section
   header
     h2#Timeline Timeline
   = component :timeline, :timeline do
+    = component_alert text: "Jan 2020", type: :primary, html: { class: "margin-bottom--s" }
     = component :card, :card, title: "Card Title" do
       | Lorem ipsum dolor sit amet, #{link_to 'consectetur', '#'} adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.
+    
+    = component_alert text: "Jan 2019", type: :primary, html: { class: "margin-bottom--s" }
     = component :card, :card, title: "Card Title" do
       | Lorem ipsum dolor sit amet, #{link_to 'consectetur', '#'} adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.

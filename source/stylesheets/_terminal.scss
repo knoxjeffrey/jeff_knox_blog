@@ -219,6 +219,15 @@ pre code {
   color: var(--font-color);
 }
 
+.terminal h1,
+.terminal .logo {
+  font-size: calc(var(--global-font-size) * 1.15);
+}
+
+.terminal h2 {
+  font-size: calc(var(--global-font-size) * 1.1);
+}
+
 .terminal-prompt {
   position: relative;
   white-space: nowrap;
@@ -633,39 +642,6 @@ select:-webkit-autofill:focus {
 
 .terminal-card > div:first-of-type {
   padding: var(--global-space);
-}
-
-.terminal-timeline {
-  position: relative;
-  padding-left: 70px;
-}
-
-.terminal-timeline::before {
-  content: ' ';
-  background: var(--secondary-color);
-  display: inline-block;
-  position: absolute;
-  left: 35px;
-  width: 2px;
-  height: 100%;
-  z-index: 400;
-}
-
-.terminal-timeline .terminal-card {
-  margin-bottom: 25px;
-}
-
-.terminal-timeline .terminal-card::before {
-  content: ' ';
-  background: var(--invert-font-color);
-  border: 2px solid var(--secondary-color);
-  display: inline-block;
-  position: absolute;
-  margin-top: 25px;
-  left: 26px;
-  width: 15px;
-  height: 15px;
-  z-index: 400;
 }
 
 .terminal-alert {
