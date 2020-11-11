@@ -5,6 +5,7 @@ gem 'cells'
 gem 'cells-slim'
 gem 'middleman', '~> 4.3.11'
 gem 'middleman-autoprefixer', '~> 2.7'
+gem 'middleman-svg'
 gem 'require_all'
 gem 'slim'
 gem 'tzinfo-data', platforms: %i[mswin mingw jruby x64_mingw]

@@ -3,7 +3,7 @@ html lang="en-GB"
   body.terminal
     = partial "partials/head"
     .container
-      = component :navigation, :main_navigation, link: "/", title: "Jeff Knox Blog" do
+      = component :navigation, :main_navigation, link: "/", title: "Jeff Knox" do
         = component :navigation, :navigation_list_item, link: "/cv", text: "CV", active: current_page.data.path == current_page.url 
     .container
       = yield

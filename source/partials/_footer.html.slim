@@ -1,4 +1,21 @@
 = component :navigation, :main_footer do
-  | Copyright © Jeff Knox Blog
-  = " #{Date.today.year}"
-  |  • All rights reserved.
+  .contact.contact--social.margin-bottom--s
+    = link_to "https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" do
+      = inline_svg "linkedin.svg", class: "social__icon"
+    = link_to "https://twitter.com/jeff_r_knox" do
+      = inline_svg "twitter.svg", class: "social__icon"
+    = link_to "https://github.com/knoxjeffrey" do
+      = inline_svg "github.svg", class: "social__icon"
+  .contact.margin-bottom--s
+    = inline_svg "mail.svg", class: "contact__icon"
+    = mail_to "jeffreyknox@hey.com"
+  .contact.margin-bottom--s
+    = inline_svg "phone.svg", class: "contact__icon"
+    = link_to "07775682459", "tel:07775682459"
+  .contact
+    = inline_svg "info.svg", class: "contact__icon"
+    span Ruby and JavaScript developer based in Edinburgh, UK.
+  p.margin-top--l
+    ' Copyright © Jeff Knox Blog
+    => "#{Date.today.year}"
+    ' • All rights reserved.
